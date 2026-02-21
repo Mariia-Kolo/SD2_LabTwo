@@ -33,8 +33,11 @@ class ConversionsTest {
                 () -> conv.stringToInteger("abc"));
     }
 
+    @Test
    void testIntegerToString (){
-
+       assertEquals("10", conv.integerToString(10));
+       assertEquals("-10", conv.integerToString(-10));
+       assertEquals("0", conv.integerToString(0));
     }
 
     void terstSwitchCase(){
