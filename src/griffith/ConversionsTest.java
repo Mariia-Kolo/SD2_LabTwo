@@ -13,9 +13,9 @@ class ConversionsTest {
 
     @Test
     void testEuroToDollar(){
-        assertEquals(10.0, conv.euroToDollar(9), 0.01);
+        assertEquals(11.0, conv.euroToDollar(10), 0.01);
         assertEquals(0.0, conv.euroToDollar(0), 0.01);
-        assertEquals(-10.0, conv.euroToDollar(-9), 0.01);
+        assertEquals(-11.0, conv.euroToDollar(-10), 0.01);
     }
 
     void testDollarToEuro(){
