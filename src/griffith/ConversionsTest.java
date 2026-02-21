@@ -18,8 +18,11 @@ class ConversionsTest {
         assertEquals(-11.0, conv.euroToDollar(-10), 0.01);
     }
 
+    @Test
     void testDollarToEuro(){
-
+        assertEquals(10.0, conv.dollarToEuro(11), 0.01);
+        assertEquals(0.0, conv.dollarToEuro(0), 0.01);
+        assertTrue(conv.dollarToEuro(-11) < 0);
     }
 
     void testStringToInteger (){
