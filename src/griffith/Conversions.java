@@ -20,7 +20,7 @@ public class Conversions {
     }
 
     public String integerToString (int val){
-    return null;
+    return Integer.toString(val);
     }
     // change uppercase to lowercase and vice versa
     public String switchCase(){
