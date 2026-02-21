@@ -25,8 +25,12 @@ class ConversionsTest {
         assertTrue(conv.dollarToEuro(-11) < 0);
     }
 
+    @Test
     void testStringToInteger (){
-
+        assertEquals(100, conv.stringToInteger("100"));
+        assertEquals(-50, conv.stringToInteger("-50"));
+        assertThrows(NumberFormatException.class,
+                () -> conv.stringToInteger("abc"));
     }
 
    void testIntegerToString (){
