@@ -42,8 +42,8 @@ class ConversionsTest {
 
     @Test
     void testSwitchCase(){
-        assertEquals("TesT",conv.switchCase("test"));
-        assertEquals("RUN",conv.switchCase("test"));
+        assertEquals("TeSt",conv.switchCase("tEsT"));
+        assertEquals("RUN",conv.switchCase("run"));
         assertEquals("123",conv.switchCase("123"));
     }
 
