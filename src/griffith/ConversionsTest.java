@@ -40,8 +40,11 @@ class ConversionsTest {
        assertEquals("0", conv.integerToString(0));
     }
 
-    void terstSwitchCase(){
-
+    @Test
+    void testSwitchCase(){
+        assertEquals("TesT",conv.switchCase("test"));
+        assertEquals("RUN",conv.switchCase("test"));
+        assertEquals("123",conv.switchCase("123"));
     }
 
 }
